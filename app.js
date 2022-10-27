@@ -4,17 +4,17 @@ const nextButton = document.querySelector("#next-button");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
-const cashGivenLabel = document.querySelector("cash-given-label");
-const billAmountLabel = document.querySelector("bill-amount-label");
+const cashGivenLabel = document.querySelector("#cash-given-label");
+const billAmountLabel = document.querySelector("#bill-amount-label");
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 nextButton.addEventListener("click", function nextButtonHandler(){
-  if(billAmount.value!=""){
-    cashGiven.style.value = "block"
-    checkButton.style.value = "block"
-    cashGivenLabel.style.value = "block"
-  }
+  
+    cashGiven.style.display = "inline-block"
+    checkButton.style.display = "block"
+    cashGivenLabel.style.display = "inline-block"
+  
 });
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
   hideMessage();

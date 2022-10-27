@@ -40,13 +40,13 @@ body {
   font-weight: 600;
 } */
 
-label #bill-amount-label {
-  display: block;
+#bill-amount-label {
+  display: inline-block;
   font-size: large;
   font-weight: 600;
 }
 
-label #cash-given-label{
+ #cash-given-label{
   display: none;
   font-size: large;
   font-weight: 600;

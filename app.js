@@ -10,10 +10,11 @@ const billAmountLabel = document.querySelector("#bill-amount-label");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 nextButton.addEventListener("click", function nextButtonHandler(){
-  
+    if(billAmount.value!=""){
     cashGiven.style.display = "inline-block"
     checkButton.style.display = "block"
     cashGivenLabel.style.display = "inline-block"
+    }
   
 });
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
